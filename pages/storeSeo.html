@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../images/logo.jpg" />
+    <title>Store</title>
+    <!--Meta-->
+    <meta name="description" content="Store of Zteam with many genre game like indie, action, RPG... Buy and play game in here">
+    <meta name="keywords" content="store, genre, store of zteam ">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:title" content="Store of Zteam">
+    <meta property="og:description" content="Store | ZTeam - Heaven of gaming">
+    <meta property="og:image" content="../images/logo.jpg">
+    <!-- bootstrap, css -->
+
+    <link rel="stylesheet" href="../asset/reset.css" />
+    <link rel="stylesheet" href="../asset/setup.css" />
+    <link rel="stylesheet" href="../asset/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../asset/fontawesome/css/all.css" />
+    <link rel="stylesheet" href="../components/header/style.css" />
+    <link rel="stylesheet" href="../components/footer/style.css" />
+    <link rel="stylesheet" href="../components/body/style.css" />
+    <link rel="stylesheet" href="../components/card/style.css" />
+    <link rel="stylesheet" href="../components/section/style.css" />
+    <link rel="stylesheet" href="../components/slide menu/style.css" />
+    <link rel="stylesheet" href="../components/shopping-cart/style.css" />
+  </head>
+
+  <body>
+    <!-- header -->
+
+    <div class="header bg-d2">
+      <div class="heading c-w">
+        <!-- <span class="logo"><img src="" alt="logo" /></span> -->
+        <div class="heading-right c-white">
+          <span class="username">
+            <div id="navthing">
+              <h2>
+                <a href="#" id="Username" class="Change-username">
+                  Đỗ Đình Ngọc
+                </a>
+                <span class="medium-size">|</span>
+                <i class="fas fa-shopping-cart large-size">
+                  <span class="counter"></span>
+                </i>
+              </h2>
+              <div class="userdropdown">
+                <div class="arrow-up small-size"></div>
+                <div class="formholder">
+                  <fieldset>
+                    <input type="button" value="Profile" />
+                    <input type="button" value="Logout" />
+                  </fieldset>
+                </div>
+              </div>
+            </div>
+          </span>
+        </div>
+      </div>
+      <div class="header-nav">
+        <nav class="navigation">
+          <a href="homeSEO.html" class="logo fw-b">Zteam</a>
+          <label for="navBar-icon" class="navBar-icon">
+            <i class="fas fa-bars large-size c-white" id="menu-icon"></i>
+          </label>
+          <input type="checkbox" id="navBar-icon" role="button" />
+          <ul class="menu medium-size" id="dropdown-menu">
+            <li><a href="homeSEO.html">Home</a></li>
+            <li id="Store-menu-hover">
+              <a href="storeSeo.html">Store<i class="arrow fw-b"></i></a>
+              <ul class="drop" id="dropdown-father">
+                <li>
+                  <a href="#">Action</a>
+                </li>
+                <li>
+                  <a href="#">Adventure</a>
+                </li>
+                <li>
+                  <a href="#">RPG</a>
+                </li>
+                <li>
+                  <a href="#">Platformer</a>
+                </li>
+                <li>
+                  <a href="#">Casual</a>
+                </li>
+              </ul>
+              <ul class="drop" id="dropdown-son">
+                <li>
+                  <a href="AllGameSEO.html"> Indie</a>
+                </li>
+                <li>
+                  <a href="#"> Racing</a>
+                </li>
+                <li>
+                  <a href="#"> Simulation</a>
+                </li>
+                <li>
+                  <a href="#"> Sports</a>
+                </li>
+                <li>
+                  <a href="#"> Strategy</a>
+                </li>
+              </ul>
+            </li>
+            <li><a href="contactSEO.html">Contact</a></li>
+            <li class="search">
+              <form onsubmit="event.preventDefault();" role="search">
+                <label for="search">Search for stuff</label>
+                <input
+                  id="search"
+                  type="search"
+                  placeholder="Search..."
+                  autofocus
+                  required
+                />
+                <button type="submit">
+                  <i class="fas fa-search medium-size c-white"></i>
+                </button>
+              </form>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <!--sticky shopping cart-->
+
+    <button id="bottom-shopping-cart">
+      <i class="fas fa-shopping-cart">
+        <span class="counter"></span>
+      </i>
+    </button>
+
+    <!-- body -->
+
+    <div class="page-body">
+      <div class="row myrow">
+        <div class="col-lg-3 col-sm-6 txt-c">
+          <nav class="slidemenu">
+            <ul class="sticky">
+              <li>
+                <a href="#Action">Action</a>
+              </li>
+              <hr />
+              <li>
+                <a href="#Adventure">Adventure</a>
+              </li>
+              <hr />
+              <li>
+                <a href="#RPG">RPG</a>
+              </li>
+              <hr />
+              <li>
+                <a href="#Platformer">Platformer</a>
+              </li>
+              <hr />
+              <li>
+                <a href="#Casual">Casual</a>
+              </li>
+              <hr />
+              <li>
+                <a href="#Indie"> Indie</a>
+              </li>
+              <hr />
+              <li>
+                <a href="#Racing"> Racing</a>
+              </li>
+              <hr />
+              <li>
+                <a href="#Simulator"> Simulation</a>
+              </li>
+              <hr />
+              <li>
+                <a href="#Sports"> Sports</a>
+              </li>
+              <hr />
+              <li>
+                <a href="#Strategy"> Strategy</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="page-content col-lg-9 col-sm-6">
+          <div class="section">
+            <a name="Action"></a>
+            <div class="section-header gap-sm bg-b pl-sm fw-b c-white">
+              <span>Action game</span>
+            </div>
+            <div class="row myrow">
+              <div class="mycard col-lg-4 col-sm-12">
+                <div class="mycard-inner">
+                  <img
+                    class="mycard-img"
+                    src="../images/Tom-Clancys-Rainbow-Six-Siege.jpg"
+                    alt="Rainbow Six Siege"
+                    onclick="location.href='../pages/GameDetail.html';"
+                  />
+                  <div class="mycard-body">
+                    <div
+                      class="mycard-title"
+                      onclick="location.href='../pages/GameDetail.html';"
+                    >
+                      <span> Tom Clancy's Rainbow Six Siege </span>
+                    </div>
+                    <div
+                      class="mycard-detail"
+                      onclick="location.href='../pages/GameDetail.html';"
+                    >
+                      <p class="mycard-text">Ubisoft</p>
+                      <p class="mycard-text fw-b">$14.27</p>
+                    </div>
+                    <button class="addbutton">
+                      <span class="fas fa-shopping-cart"> Add to cart</span>
+                    </button>
+                  </div>
+                  <div class="mycard_overlay">
+                    <h2>Added to cart</h2>
+                    <i class="fas fa-check"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="section-footer gap-sm txt-r">
+              <a href="../pages/AllGame.html">See more ...</a>
+            </div>
+          </div>
+
+          <div class="section">
+            <a name="Adventure"></a>
+            <div class="section-header gap-sm bg-b pl-sm fw-b c-white">
+              <span>Adventure</span>
+            </div>
+            <div class="row myrow">
+              <div class="mycard col-lg-4 col-sm-12">
+                <div class="mycard-inner">
+                  <img
+                    class="mycard-img"
+                    src="../images/Tom-Clancys-Rainbow-Six-Siege.jpg"
+                    alt="Card image cap"
+                    onclick="location.href='../pages/GameDetail.html';"
+                  />
+                  <div class="mycard-body">
+                    <div
+                      class="mycard-title"
+                      onclick="location.href='../pages/GameDetail.html';"
+                    >
+                      <span> Tom Clancy's Rainbow Six Siege </span>
+                    </div>
+                    <div
+                      class="mycard-detail"
+                      onclick="location.href='../pages/GameDetail.html';"
+                    >
+                      <p class="mycard-text">Ubisoft</p>
+                      <p class="mycard-text fw-b">$14.27</p>
+                    </div>
+                    <button class="addbutton">
+                      <span class="fas fa-shopping-cart"> Add to cart</span>
+                    </button>
+                  </div>
+                  <div class="mycard_overlay">
+                    <h2>Added to cart</h2>
+                    <i class="fas fa-check"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="section-footer gap-sm txt-r">
+              <a href="../pages/AllGame.html">See more ...</a>
+            </div>
+          </div>
+
+          <div class="section">
+            <a name="RPG"></a>
+            <div class="section-header gap-sm bg-b pl-sm fw-b c-white">
+              <span>RPG</span>
+            </div>
+            <div class="row myrow">
+              <div class="mycard col-lg-4 col-sm-12">
+                <div class="mycard-inner">
+                  <img
+                    class="mycard-img"
+                    src="../images/Tom-Clancys-Rainbow-Six-Siege.jpg"
+                    alt="Card image cap"
+                    onclick="location.href='../pages/GameDetail.html';"
+                  />
+                  <div class="mycard-body">
+                    <div
+                      class="mycard-title"
+                      onclick="location.href='../pages/GameDetail.html';"
+                    >
+                      <span> Tom Clancy's Rainbow Six Siege </span>
+                    </div>
+                    <div
+                      class="mycard-detail"
+                      onclick="location.href='../pages/GameDetail.html';"
+                    >
+                      <p class="mycard-text">Ubisoft</p>
+                      <p class="mycard-text fw-b">$14.27</p>
+                    </div>
+                    <button class="addbutton">
+                      <span class="fas fa-shopping-cart"> Add to cart</span>
+                    </button>
+                  </div>
+                  <div class="mycard_overlay">
+                    <h2>Added to cart</h2>
+                    <i class="fas fa-check"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="section-footer gap-sm txt-r">
+              <a href="../pages/AllGame.html">See more ...</a>
+            </div>
+          </div>
+
+          <div class="section">
+            <a name="Platformer"></a>
+            <div class="section-header gap-sm bg-b pl-sm fw-b c-white">
+              <span>Platformer</span>
+            </div>
+            <div class="row myrow">
+              <div class="mycard col-lg-4 col-sm-12">
+                <div class="mycard-inner">
+                  <img
+                    class="mycard-img"
+                    src="../images/Tom-Clancys-Rainbow-Six-Siege.jpg"
+                    alt="Card image cap"
+                    onclick="location.href='../pages/GameDetail.html';"
+                  />
+                  <div class="mycard-body">
+                    <div
+                      class="mycard-title"
+                      onclick="location.href='../pages/GameDetail.html';"
+                    >
+                      <span> Tom Clancy's Rainbow Six Siege </span>
+                    </div>
+                    <div
+                      class="mycard-detail"
+                      onclick="location.href='../pages/GameDetail.html';"
+                    >
+                      <p class="mycard-text">Ubisoft</p>
+                      <p class="mycard-text fw-b">$14.27</p>
+                    </div>
+                    <button class="addbutton">
+                      <span class="fas fa-shopping-cart"> Add to cart</span>
+                    </button>
+                  </div>
+                  <div class="mycard_overlay">
+                    <h2>Added to cart</h2>
+                    <i class="fas fa-check"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="section-footer gap-sm txt-r">
+              <a href="../pages/AllGame.html">See more ...</a>
+            </div>
+          </div>
+
+          <div class="section">
+            <a name="Casual"></a>
+            <div class="section-header gap-sm bg-b pl-sm fw-b c-white">
+              <span>Casual</span>
+            </div>
+            <div class="row myrow">
+              <div class="mycard col-lg-4 col-sm-12">
+                <div class="mycard-inner">
+                  <img
+                    class="mycard-img"
+                    src="../images/Tom-Clancys-Rainbow-Six-Siege.jpg"
+                    alt="Card image cap"
+                    onclick="location.href='../pages/GameDetail.html';"
+                  />
+                  <div class="mycard-body">
+                    <div
+                      class="mycard-title"
+                      onclick="location.href='../pages/GameDetail.html';"
+                    >
+                      <span> Tom Clancy's Rainbow Six Siege </span>
+                    </div>
+                    <div
+                      class="mycard-detail"
+                      onclick="location.href='../pages/GameDetail.html';"
+                    >
+                      <p class="mycard-text">Ubisoft</p>
+                      <p class="mycard-text fw-b">$14.27</p>
+                    </div>
+                    <button class="addbutton">
+                      <span class="fas fa-shopping-cart"> Add to cart</span>
+                    </button>
+                  </div>
+                  <div class="mycard_overlay">
+                    <h2>Added to cart</h2>
+                    <i class="fas fa-check"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="section-footer gap-sm txt-r">
+              <a href="../pages/AllGame.html">See more ...</a>
+            </div>
+          </div>
+
+          <div class="section">
+            <a name="Indie"></a>
+            <div class="section-header gap-sm bg-b pl-sm fw-b c-white">
+              <span>Indie</span>
+            </div>
+            <div class="row myrow">
+              <div class="mycard col-lg-4 col-sm-12">
+                <div class="mycard-inner">
+                  <img
+                    class="mycard-img"
+                    src="../images/Tom-Clancys-Rainbow-Six-Siege.jpg"
+                    alt="Card image cap"
+                    onclick="location.href='../pages/GameDetail.html';"
+                  />
+                  <div class="mycard-body">
+                    <div
+                      class="mycard-title"
+                      onclick="location.href='../pages/GameDetail.html';"
+                    >
+                      <span> Tom Clancy's Rainbow Six Siege </span>
+                    </div>
+                    <div
+                      class="mycard-detail"
+                      onclick="location.href='../pages/GameDetail.html';"
+                    >
+                      <p class="mycard-text">Ubisoft</p>
+                      <p class="mycard-text fw-b">$14.27</p>
+                    </div>
+                    <button class="addbutton">
+                      <span class="fas fa-shopping-cart"> Add to cart</span>
+                    </button>
+                  </div>
+                  <div class="mycard_overlay">
+                    <h2>Added to cart</h2>
+                    <i class="fas fa-check"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="section-footer gap-sm txt-r">
+              <a href="../pages/AllGame.html">See more ...</a>
+            </div>
+          </div>
+
+          <div class="section">
+            <a name="Racing"></a>
+            <div class="section-header gap-sm bg-b pl-sm fw-b c-white">
+              <span>Racing</span>
+            </div>
+            <div class="row myrow">
+              <div class="mycard col-lg-4 col-sm-12">
+                <div class="mycard-inner">
+                  <img
+                    class="mycard-img"
+                    src="../images/Tom-Clancys-Rainbow-Six-Siege.jpg"
+                    alt="Card image cap"
+                    onclick="location.href='../pages/GameDetail.html';"
+                  />
+                  <div class="mycard-body">
+                    <div
+                      class="mycard-title"
+                      onclick="location.href='../pages/GameDetail.html';"
+                    >
+                      <span> Tom Clancy's Rainbow Six Siege </span>
+                    </div>
+                    <div
+                      class="mycard-detail"
+                      onclick="location.href='../pages/GameDetail.html';"
+                    >
+                      <p class="mycard-text">Ubisoft</p>
+                      <p class="mycard-text fw-b">$14.27</p>
+                    </div>
+                    <button class="addbutton">
+                      <span class="fas fa-shopping-cart"> Add to cart</span>
+                    </button>
+                  </div>
+                  <div class="mycard_overlay">
+                    <h2>Added to cart</h2>
+                    <i class="fas fa-check"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="section-footer gap-sm txt-r">
+              <a href="../pages/AllGame.html">See more ...</a>
+            </div>
+          </div>
+
+          <div class="section">
+            <a name="Simulator"></a>
+            <div class="section-header gap-sm bg-b pl-sm fw-b c-white">
+              <span>Simulation</span>
+            </div>
+            <div class="row myrow">
+              <div class="mycard col-lg-4 col-sm-12">
+                <div class="mycard-inner">
+                  <img
+                    class="mycard-img"
+                    src="../images/Tom-Clancys-Rainbow-Six-Siege.jpg"
+                    alt="Card image cap"
+                    onclick="location.href='../pages/GameDetail.html';"
+                  />
+                  <div class="mycard-body">
+                    <div
+                      class="mycard-title"
+                      onclick="location.href='../pages/GameDetail.html';"
+                    >
+                      <span> Tom Clancy's Rainbow Six Siege </span>
+                    </div>
+                    <div
+                      class="mycard-detail"
+                      onclick="location.href='../pages/GameDetail.html';"
+                    >
+                      <p class="mycard-text">Ubisoft</p>
+                      <p class="mycard-text fw-b">$14.27</p>
+                    </div>
+                    <button class="addbutton">
+                      <span class="fas fa-shopping-cart"> Add to cart</span>
+                    </button>
+                  </div>
+                  <div class="mycard_overlay">
+                    <h2>Added to cart</h2>
+                    <i class="fas fa-check"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="section-footer gap-sm txt-r">
+              <a href="../pages/AllGame.html">See more ...</a>
+            </div>
+          </div>
+
+          <div class="section">
+            <a name="Sports"></a>
+            <div class="section-header gap-sm bg-b pl-sm fw-b c-white">
+              <span>Sports</span>
+            </div>
+            <div class="row myrow">
+              <div class="mycard col-lg-4 col-sm-12">
+                <div class="mycard-inner">
+                  <img
+                    class="mycard-img"
+                    src="../images/Tom-Clancys-Rainbow-Six-Siege.jpg"
+                    alt="Card image cap"
+                    onclick="location.href='../pages/GameDetail.html';"
+                  />
+                  <div class="mycard-body">
+                    <div
+                      class="mycard-title"
+                      onclick="location.href='../pages/GameDetail.html';"
+                    >
+                      <span> Tom Clancy's Rainbow Six Siege </span>
+                    </div>
+                    <div
+                      class="mycard-detail"
+                      onclick="location.href='../pages/GameDetail.html';"
+                    >
+                      <p class="mycard-text">Ubisoft</p>
+                      <p class="mycard-text fw-b">$14.27</p>
+                    </div>
+                    <button class="addbutton">
+                      <span class="fas fa-shopping-cart"> Add to cart</span>
+                    </button>
+                  </div>
+                  <div class="mycard_overlay">
+                    <h2>Added to cart</h2>
+                    <i class="fas fa-check"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="section-footer gap-sm txt-r">
+              <a href="../pages/AllGame.html">See more ...</a>
+            </div>
+          </div>
+
+          <div class="section">
+            <a name="Strategy"></a>
+            <div class="section-header gap-sm bg-b pl-sm fw-b c-white">
+              <span>Strategy</span>
+            </div>
+            <div class="row myrow">
+              <div class="mycard col-lg-4 col-sm-12">
+                <div class="mycard-inner">
+                  <img
+                    class="mycard-img"
+                    src="../images/Tom-Clancys-Rainbow-Six-Siege.jpg"
+                    alt="Card image cap"
+                    onclick="location.href='../pages/GameDetail.html';"
+                  />
+                  <div class="mycard-body">
+                    <div
+                      class="mycard-title"
+                      onclick="location.href='../pages/GameDetail.html';"
+                    >
+                      <span> Tom Clancy's Rainbow Six Siege </span>
+                    </div>
+                    <div
+                      class="mycard-detail"
+                      onclick="location.href='../pages/GameDetail.html';"
+                    >
+                      <p class="mycard-text">Ubisoft</p>
+                      <p class="mycard-text fw-b">$14.27</p>
+                    </div>
+                    <button class="addbutton">
+                      <span class="fas fa-shopping-cart"> Add to cart</span>
+                    </button>
+                  </div>
+                  <div class="mycard_overlay">
+                    <h2>Added to cart</h2>
+                    <i class="fas fa-check"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="section-footer gap-sm txt-r">
+              <a href="../pages/AllGame.html">See more ...</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+
+    <div class="footer bg-d2">
+      <div class="row myrow">
+        <div class="brand col-4 mt-sm txt-c">
+          <span class="c-white large-size fw-b">ZTEAM</span><br />
+          <span class="c-dark-2 small-size">Email: Zteam@mail.com</span><br />
+          <span class="c-dark-2 small-size">Hotline: 0777888999</span>
+        </div>
+        <div class="col-3 mt-sm">
+          <span class="c-white medium-size">Learn More</span><br />
+          <ul class="pt-xs">
+            <li><a>About Us</a></li>
+            <li><a>Terms & Condition</a></li>
+            <li><a>Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="col-3 c-white mt-sm">
+          <span class="c-white medium-size">Follow Us</span><br />
+          <ul class="pt-xs">
+            <li><a>Facebook</a></li>
+            <li><a>Twitter</a></li>
+            <li><a>Instagram</a></li>
+          </ul>
+        </div>
+        <div class="col-2 c-white mt-sm">
+          <span class="c-white medium-size">Other Site</span><br />
+          <ul class="pt-xs">
+            <li><a>PlayStation</a></li>
+            <li><a>ZForum</a></li>
+            <li><a>ZRealms</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row myrow">
+        <div class="col-12 txt-c c-dark-1">
+          © 2020 Copyright: zteamgameheaven.com
+        </div>
+      </div>
+    </div>
+
+    <!-- jquery -->
+    <script src="../asset/bootstrap/js/jquery-3.4.1.min.js"></script>
+    <script src="../components/slide menu/script.js"></script>
+    <script src="../components/card/script.js"></script>
+    <script src="../components/header/script.js"></script>
+    <script src="../components/shopping-cart/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../images/logo.jpg" />
+    <title>Cart | ZTeam</title>
+
+    <!-- Meta -->
+
+    <meta name="description" content="ZTeam is your paradise for gaming, sharing and exploring">
+    <meta name="keywords" content="Game selling platform">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:title" content="Cart | ZTeam - Heaven of gaming">
+    <meta property="og:description" content="ZTeam is your paradise for gaming, sharing and exploring">
+    <meta property="og:image" content="../images/logo.jpg">
+
+    <!-- bootstrap, css -->
+
+    <link rel="stylesheet" href="../asset/reset.css" />
+    <link rel="stylesheet" href="../asset/setup.css" />
+    <link rel="stylesheet" href="../asset/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../asset/fontawesome/css/all.css" />
+    <link rel="stylesheet" href="../components/header/style.css" />
+    <link rel="stylesheet" href="../components/footer/style.css" />
+    <link rel="stylesheet" href="../components/body/style.css" />
+    <link rel="stylesheet" href="../components/cart/style.css">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+</head>
+
+<body>
+    <!-- header -->
+
+    <div class="header bg-d2">
+        <div class="heading c-w">
+            <!-- <span class="logo"><img src="" alt="logo" /></span> -->
+            <div class="heading-right c-white">
+                <span class="username">
+                    <div id="navthing">
+                        <h2><a href="#" id="Username" class="Change-username">
+                                Đỗ Đình Ngọc
+                            </a>
+                            <span class="medium-size">|</span>
+                            <i class="fas fa-shopping-cart large-size"">
+                                <span class=" counter">
+                </span>
+                </i>
+                </h2>
+                <div class="userdropdown">
+                    <div class="arrow-up small-size"></div>
+                    <div class="formholder">
+                        <fieldset>
+                            <input type="button" value="Profile" />
+                            <input type="button" value="Logout" />
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
+            </span>
+        </div>
+    </div>
+    <div class="header-nav">
+        <nav class="navigation">
+            <a href="homeSEO.html" class="logo fw-b">Zteam</a>
+            <label for="navBar-icon" class="navBar-icon">
+                <i class="fas fa-bars large-size c-white" id="menu-icon"></i>
+            </label>
+            <input type="checkbox" id="navBar-icon" role="button">
+            <ul class="menu medium-size" id="dropdown-menu">
+                <li><a href="home.html">Home</a></li>
+                <li id="Store-menu-hover"><a href="store.html">Store<i class="arrow fw-b"></i></a>
+                    <ul class="drop" id="dropdown-father">
+                        <li>
+                            <a href="#">Action</a>
+                        </li>
+                        <li>
+                            <a href="#">Adventure</a>
+                        </li>
+                        <li>
+                            <a href="#">RPG</a>
+                        </li>
+                        <li>
+                            <a href="#">Platformer</a>
+                        </li>
+                        <li>
+                            <a href="#">Casual</a>
+                        </li>
+                    </ul>
+                    <ul class="drop" id="dropdown-son">
+                        <li>
+                            <a href="AllGame.html"> Indie</a>
+                        </li>
+                        <li>
+                            <a href="#"> Racing</a>
+                        </li>
+                        <li>
+                            <a href="#"> Simulation</a>
+                        </li>
+                        <li>
+                            <a href="#"> Sports</a>
+                        </li>
+                        <li>
+                            <a href="#"> Strategy</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="search">
+                    <form onsubmit="event.preventDefault();" role="search">
+                        <label for="search">Search for stuff</label>
+                        <input id="search" type="search" placeholder="Search..." autofocus required />
+                        <button type="submit"><i class="fas fa-search medium-size c-white"></i></button>
+                    </form>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    </div>
+
+    <!-- body -->
+
+    <div class="body">
+        <div class="cart">
+            <div class="column-labels">
+                <label class="product-image">Code orders: SF5E7FIE6</label>
+                <label class="product-details">Game</label>
+                <label class="product-removal">Delete</label>
+                <label class="product-line-price">Price</label>
+            </div>
+
+            <div class="product">
+                <div class="product-image">
+                    <input type="checkbox" class="larger product-check" />
+                    <img 
+                        src="../images/Tom-Clancys-Rainbow-Six-Siege.jpg" 
+                        alt="Tom Clancys Rainbow Six Siege"
+                    />
+                </div>
+                <div class="product-details">
+                    <div class="product-title">
+                        <div id="truncateLongTexts">Tom Clancy's Rainbow Six Siege</div>
+                        <p class="product-description">
+                            Respawn Entertainment
+                        </p>
+                    </div>
+                </div>
+                <div class="product-removal">
+                    <button class="remove-product">x</button>
+                </div>
+                <div class="product-line-price">14.27</div>
+            </div>
+            <div class="totals">
+                <div class="totals-item">
+                    <label>Total</label>
+                    <div class="totals-value" id="cart-subtotal">0</div>
+                </div>
+                <div class="totals-item">
+                    <label>Coupon</label>
+                    <div class="totals-value" id="cart-coupon">0</div>
+                </div>
+                <div class="totals-item" style="color: red; font-size: 20pt">
+                    <label>Total amount</label>
+                    <div class="totals-value" id="cart-total">0</div>
+                </div>
+                <button class="checkout">Checkout</button>
+            </div>
+        </div>
+    </div>
+    <div class="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <p>Payment success</p>
+            <button class="ok">OK</button>
+        </div>
+    </div>
+    <!-- footer -->
+
+    <div class="footer bg-d2">
+        <div class="row myrow">
+            <div class="brand col-4 mt-sm txt-c">
+                <span class="c-white large-size fw-b">ZTEAM</span><br />
+                <span class="c-dark-2 small-size">Email: Zteam@mail.com</span><br />
+                <span class="c-dark-2 small-size">Hotline: 0777888999</span>
+            </div>
+            <div class="col-3 mt-sm">
+                <span class="c-white medium-size">Learn More</span><br />
+                <ul class="pt-xs">
+                    <li><a>About Us</a></li>
+                    <li><a>Terms & Condition</a></li>
+                    <li><a>Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="col-3 c-white mt-sm">
+                <span class="c-white medium-size">Follow Us</span><br />
+                <ul class="pt-xs">
+                    <li><a>Facebook</a></li>
+                    <li><a>Twitter</a></li>
+                    <li><a>Instagram</a></li>
+                </ul>
+            </div>
+            <div class="col-2 c-white mt-sm">
+                <span class="c-white medium-size">Other Site</span><br />
+                <ul class="pt-xs">
+                    <li><a>PlayStation</a></li>
+                    <li><a>ZForum</a></li>
+                    <li><a>ZRealms</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row myrow">
+            <div class="col-12 txt-c c-dark-1">
+                © 2020 Copyright: zteamgameheaven.com
+            </div>
+        </div>
+    </div>
+
+    <!-- jquery -->
+
+    <script src="../asset/bootstrap/js/jquery-3.4.1.min.js"></script>
+    <script src="../components/header/script.js"></script>
+    <script src="../components/cart/script.js"></script>
+</body>
+
+</html>
