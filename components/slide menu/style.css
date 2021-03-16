@@ -1,0 +1,88 @@
+.slidemenu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 12pt;
+    color: red;
+    width: 100%;
+    background-color:#1A4159;
+    height: 100%;
+
+}
+
+/* Each list item inside vertical menu bar */
+
+
+/* Text and links down main .slidemenubar */
+.slidemenu span,
+.slidemenu a {
+    /* Preload two background images */
+    text-decoration: none;
+    outline: none;
+    display: block;
+    height: 49.7px;
+    line-height: 40px;
+    width: 100%;
+    text-align: center;
+    padding-top: 9px;
+}
+
+/* Span and unvisited/visited links in vertical bar     */
+.slidemenu a:link,
+.slidemenu a:visited {
+    color: white;
+}
+
+/* Hovering over list item in vertical bar */
+.slidemenu ul li:hover a,
+.slidemenu ul li:hover span {
+    color: #28A745;
+}
+
+/* Flyout menu for each item in menu bar */
+
+/* Make flyout visible when hovering on main bar item  */
+.slidemenu ul li:hover ul {
+    visibility: visible;
+}
+
+/* Individual list items in flyout menus */
+.slidemenu ul li ul li {
+    width: 100%;
+    height: 44px;
+    line-height: 44px;
+}
+
+/* Links in flyout menus */
+.slidemenu ul li ul li a,
+.slidemenu ul li ul li a:link,
+.slidemenu ul li ul li a:visited {
+    background: none;
+    display: block;
+    text-align: left;
+    text-indent: 10%;
+    width: 100%;
+    height: 100%;
+    color: White;
+    text-decoration: none;
+    outline: none;
+}
+
+/* Hover and active states in flyout menu */
+.slidemenu ul li ul li a:hover,
+.slidemenu ul li ul li a:active {
+    color: #28A745;
+}
+li a
+{
+    display: block;
+    text-decoration: none;
+}
+hr
+{
+    width:50% ;
+    margin: auto; 
+    color: white; 
+    height: 0.1px; 
+    background-color: white;
+}

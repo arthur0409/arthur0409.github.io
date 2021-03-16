@@ -1,0 +1,148 @@
+.title
+{
+  font-family: "Motiva Sans", Sans-serif;
+  color: white;
+  font-size: 35px;
+  line-height: 32px;
+  margin-bottom: 20px;
+  
+}
+.title-detail
+{
+   color: white;
+   font-size: 18px;
+}
+.img-detail
+{
+    height: 300px;
+    width: 100%;
+    border-radius: 3px;
+    border: 1px solid lightgrey;
+}
+.decription
+{
+    line-height: 1.5em;
+    font-size: 18px;
+    overflow: hidden;
+    font-family: "Motiva Sans", Sans-serif;
+    font-weight: normal;
+    text-align: left;
+    color: #9E9E9E;
+    width: 100%;
+}
+body
+{
+    background-color: rgb(18,18,18,0.9);
+}
+.icon
+{
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color:#292929;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.icon button:focus{
+  outline: none;
+}
+
+.infor
+{
+    font-size: 10;
+}
+.description 
+{
+  width: 100%;
+  position: relative;
+  font-size: 18px;
+  color: rgb(225,225,225,0.6);
+}
+.description button:focus
+{
+  outline: 1px solid;
+}
+
+.sys-content
+{
+   display: flex;
+   width: 100%;
+   position: relative;
+   font-size: 12px;
+}
+
+.small-div{
+  width: 90%;
+}
+
+.recommened-sys
+{
+  margin-left: 100px;
+  width: 50%;
+  float: right;
+  font-size: 15px;
+}
+.minium-sys
+{
+  float: left;
+  width: 50%;
+  font-size: 15px;
+}
+.System-Require
+{
+  color: rgb(225,225,225,0.6);
+}
+.relate-game
+{
+ font-size: 18px;
+ color: white;
+
+}
+.more
+{
+  margin-bottom: 10px;
+}
+.frame-relate-game
+{
+  background-color: #313131;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 10px;
+  border-radius: 4px;
+  margin-bottom: 50px;
+  border:1px solid #191C22;
+  width: 100%;
+  
+}
+.page-body-contents
+{
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+/*Khung relategame*/
+.frame
+{
+  border: 1px solid lightgrey;
+  border-radius: 8px;
+}
+.frame:hover
+{
+  border-radius: 0px;
+}
+img
+{
+  border-radius: 5px;
+}
+
+.title-img
+{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 50px;
+  background-color: #313131;
+  border-radius: 3px;
+  border:1px solid #191C22;
+  margin-left: -15px;
+  padding-left: 20px;
+}

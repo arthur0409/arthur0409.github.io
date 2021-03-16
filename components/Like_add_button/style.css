@@ -1,0 +1,116 @@
+.tym
+{
+  margin-right: 60px;
+}
+.center-content {
+  position: absolute;
+  margin-top: 25px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.heart {
+  display: block;
+  width: 1em;
+  height: 1em;
+  font-size: 20px;
+  margin-top: 4px;
+}
+.heart:hover
+{
+  cursor: pointer;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.heart .heart-inner, .heart .heart-inner::before, .heart .heart-inner::after {
+  background-color: #ccc;
+}
+.heart.loved .heart-inner, .heart.loved .heart-inner::before, .heart.loved .heart-inner::after {
+  background-color: #f33;
+}
+.heart.loved {
+  -webkit-animation: loved 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+          animation: loved 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.heart-inner {
+  display: block;
+  width: 1em;
+  height: 1em;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.heart-inner:before, .heart-inner:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 1em;
+  height: 1em;
+  border-radius: 1em;
+}
+.heart-inner::before {
+  left: 0;
+  top: -50%;
+}
+.heart-inner::after {
+  left: -50%;
+  top: 0;
+}
+
+@-webkit-keyframes loved {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  25% {
+    -webkit-transform: scale(0.6, 0.8);
+            transform: scale(0.6, 0.8);
+  }
+  35% {
+    -webkit-transform: scale(0.8, 0.6);
+            transform: scale(0.8, 0.6);
+  }
+  70% {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes loved {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  25% {
+    -webkit-transform: scale(0.6, 0.8);
+            transform: scale(0.6, 0.8);
+  }
+  35% {
+    -webkit-transform: scale(0.8, 0.6);
+            transform: scale(0.8, 0.6);
+  }
+  70% {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+.addbutton
+{
+  background-color: #292929;
+  border: none;
+  color: #CCCCCC;
+  outline: #292929;
+}
+.addbutton i:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}

@@ -1,0 +1,101 @@
+.expand-btn-container {
+  width: 100%;
+  min-width: 460px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 40px;
+  height: 100px;
+  position: relative;
+  overflow: hidden;
+}
+
+.active {
+  width: 95% !important;
+  transition: 0.5s;
+  border: solid 1px lightgrey;
+}
+
+.expand-btn {
+  border-radius: 50%;
+  height: 100%;
+  width: 100px;
+  border: double 5px lightgrey;
+  outline: none;
+  z-index: 10;
+  cursor: pointer;
+  position: absolute;
+  color: #ffffff;
+}
+
+.data {
+  width: 0;
+  height: 99%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  white-space: nowrap;
+  overflow: hidden;
+  border-radius: 50px;
+  transition: 0.5s;
+}
+.data span {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  height: fit-content;
+  margin: auto;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.data span a {
+  color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+}
+.data span a:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+.right-expand {
+  left: 0;
+}
+
+.left-expand {
+  right: 0;
+}
+
+/* background-color */
+
+.bg-map {
+  background-color: rgb(221, 53, 43);
+}
+.bg-map-o {
+  background-color: rgb(221, 53, 43, 0.6);
+}
+.bg-call {
+  background-color: rgb(44, 221, 68);
+}
+.bg-call-o {
+  background-color: rgb(44, 221, 68, 0.6);
+}
+.bg-fb {
+  background-color: rgb(5, 116, 231);
+}
+.bg-fb-o {
+  background-color: rgb(5, 116, 231, 0.6);
+}
+.bg-tt {
+  background-color: rgb(29, 161, 242);
+}
+.bg-tt-o {
+  background-color: rgb(29, 161, 242, 0.6);
+}
+.bg-mail {
+  background-color: rgb(226, 21, 6);
+}
+.bg-mail-o {
+  background-color: rgb(226, 21, 6, 0.6);
+}

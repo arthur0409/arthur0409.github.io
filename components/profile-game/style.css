@@ -1,0 +1,80 @@
+/* .Hungcustom{
+    margin-bottom: 20px;
+} */
+
+/* OPTIONAL */
+/* Style label as button below items */
+.limit-items {
+    position: relative;
+    padding-bottom: 40px;
+    width: 90%;
+    margin: auto;
+}
+
+.limit-items .like-game{
+    position: absolute;
+    bottom: 15px;
+    right: 20px;
+    cursor: pointer;
+    color: red;
+}
+
+.limit-items .mycard{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.limit-items .cardgroup-card-inner,
+.limit-items .mycard-inner{
+    height: auto !important;
+}
+
+.limit-items #show-all-mygame,
+.limit-items #show-all-favourite{
+    display: none;
+}
+
+.limit-items label[for="show-all-mygame"],
+.limit-items label[for="show-all-favourite"] {
+    position: absolute;
+    box-sizing: border-box;
+    width: auto;
+    bottom: 28px;
+    right: 40%;
+    z-index: 500;
+    text-align: center;
+    border-radius: 100%;
+    background-color: #292929;
+    border: 2px solid #9b8585;
+    cursor: pointer;
+    min-width: 20%;
+}
+
+.limit-items label[for="show-all-mygame"]:hover,
+.limit-items label[for="show-all-favourite"]:hover {
+    border: 2px solid #aaa;
+}
+
+.favourite #show-all-favourite~label[for="show-all-favourite"] {
+    display: none;
+}
+
+.favourite #show-all-favourite:checked~.buttonupdown-hide1 {
+    display: inline-block;
+}
+
+.favourite #show-all-favourite:not(:checked)~.buttonupdown-show1 {
+    display: inline-block;
+}
+
+.mygame #show-all-mygame~label[for="show-all-mygame"] {
+    display: none;
+}
+
+.mygame #show-all-mygame:checked~.buttonupdown-hide2 {
+    display: inline-block;
+}
+
+.mygame #show-all-mygame:not(:checked)~.buttonupdown-show2 {
+    display: inline-block;
+}

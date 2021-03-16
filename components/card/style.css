@@ -1,0 +1,190 @@
+/* Single Card */
+
+.mycard {
+  margin: 10px 0;
+}
+.mycard-inner {
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  line-height: 1.4;
+  padding-bottom: 10px;
+  box-shadow: 0 1px 3px rgba(255, 255, 255, 0.12),
+    0 1px 2px rgba(255, 255, 255, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.mycard-body {
+  flex: 1 1 auto;
+  min-height: 1px;
+  padding: 1.25rem;
+}
+.mycard-inner .mycard-img {
+  height: 221px;
+  width: 100%;
+}
+.mycard-inner .mycard-title,
+.cardgroup-card-inner .cardgroup-card-title {
+  font-weight: bold;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 90%;
+  color: #fff;
+}
+.mycard-inner .mycard-text,
+.cardgroup-card-inner .cardgroup-card-text {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 90%;
+  color: rgba(255, 255, 255, 0.6);
+}
+.mycard-inner .mycard-img,
+.mycard-title,
+.mycard-text {
+  cursor: pointer;
+}
+.cardgroup-card-inner:hover,
+.mycard-inner:hover {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  animation-name: example;
+  animation-duration: 0.25s;
+  border-left: 3px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 14px 28px rgba(255, 255, 255, 0.25),
+    0 10px 10px rgba(255, 255, 255, 0.22);
+}
+.mycard-inner button,
+.cardgroup-card-inner button {
+  width: 100%;
+  height: 45px;
+  border: 1px solid #28a745;
+  color: #28a745;
+  border-radius: 3px;
+  background: none;
+  cursor: pointer;
+  -webkit-transition: background ease-in 0.25s;
+  transition: background ease-in 0.25s;
+}
+.mycard-inner button:hover,
+.cardgroup-card-inner button:hover {
+  background: #0069d9;
+  color: #fff;
+  border-color: #0069d9;
+}
+.mycard_overlay {
+  background: rgba(255, 255, 255, 0.9);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  -webkit-transform: translateY(-500px);
+  transform: translateY(-500px);
+  opacity: 0;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-flow: column wrap;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+}
+.mycard_overlay h2 {
+  color: rgba(43, 45, 66, 0.7);
+  font-size: 1.2em;
+  margin: 1em 0;
+}
+.mycard_overlay i {
+  color: rgba(43, 45, 66, 0.7);
+  font-size: 1.5em;
+}
+.mycard-text .discount {
+  color: rgb(245, 245, 245);
+  background-color: rgb(0, 116, 228);
+  text-transform: uppercase;
+  border-radius: 8px;
+  margin-right: 5px;
+  padding: 3px 6px;
+  text-align: center;
+}
+
+/* Group Card */
+
+.cardgroup {
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+  margin: 10px 0;
+  box-shadow: 0 1px 3px rgba(255, 255, 255, 0.12),
+    0 1px 2px rgba(255, 255, 255, 0.24);
+}
+.cardgroup-section {
+  animation: fade 0.4s;
+  position: relative;
+}
+.cardgroup-card {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.cardgroup-card-inner {
+  overflow: hidden;
+  height: 360px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+  box-shadow: 0 1px 3px rgba(255, 255, 255, 0.12),
+    0 1px 2px rgba(255, 255, 255, 0.24);
+}
+.cardgroup-header {
+  display: flex;
+  position: relative;
+  color: #fff;
+}
+.cardgroup-header-btn {
+  display: flex;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+.cardgroup-header-btn .prev-btn:hover,
+.cardgroup-header-btn .forw-btn:hover {
+  cursor: pointer;
+  text-shadow: 0 1px 3px rgba(255, 255, 255, 0.12),
+    0 1px 2px rgba(255, 255, 255, 0.24);
+  color: rgb(255, 255, 255, 0.6);
+}
+.cardgroup-card-inner .cardgroup-card-img {
+  width: 100%;
+  height: 210px;
+}
+.cardgroup-card-inner .cardgroup-card-statusbar {
+  height: 30px;
+  background-color: rgb(0, 120, 242);
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.cardgroup-card-body {
+  flex: 1 1 auto;
+  min-height: 1px;
+  padding: 1.25rem;
+}
+@keyframes fade {
+  from {
+    right: -300px;
+    opacity: 0;
+  }
+  to {
+    right: 0;
+    opacity: 1;
+  }
+}

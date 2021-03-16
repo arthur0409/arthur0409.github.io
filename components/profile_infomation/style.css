@@ -1,0 +1,56 @@
+.profile-user-info {
+    position: relative;
+    display: table;
+    width: 87%;
+    margin: 20px auto auto 20px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 1px solid #171A21;
+    background-color: rgba(51, 51, 51, 0.835);
+    padding: 27px;
+}
+
+@media screen and (max-width : 1000px){
+    .profile-user-info {
+        width: 100%;
+    }
+}
+
+.profile-info-row {
+    display: table-row;
+    position: relative;
+}
+
+.profile-info-name,
+.profile-info-value {
+    display: table-cell;
+    border-top: 1px dotted #667E99;
+}
+
+.profile-info-name {
+    text-align: right;
+    padding: 6px 10px 6px 4px;
+    font-weight: 400;
+    color: #667e99;
+    background-color: transparent;
+    width: 170px;
+    vertical-align: middle;
+}
+
+.profile-info-value {
+    padding: 6px 4px 6px 6px;
+    color: white;
+}
+
+.profile-info-row:first-child .profile-info-name,
+.profile-info-row:first-child .profile-info-value {
+    border-top: none;
+}
+
+.profile-user-info #change-age{
+    max-width : 60px;
+}
+
+.profile-info-value input{
+    height: 30px;
+}

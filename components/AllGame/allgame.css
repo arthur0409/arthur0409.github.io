@@ -1,0 +1,23 @@
+.allgame-section
+{
+  animation: fade 0.4s;
+  position: relative;
+}
+.page-body-allgame
+{
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+@keyframes fade {
+  from {
+    right: -300px;
+    opacity: 0;
+  }
+  to {
+    right: 0;
+    opacity: 1;
+  }
+}

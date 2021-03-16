@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:700");
+
+.pagination {
+  overflow: hidden;
+  background: #313131;
+  border-radius: 5px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.05);
+  font-size: 15pt;
+  display: flex;
+  position: relative;
+  user-select: none;
+}
+.pagination .nav-btn {
+  font-family: Font Awesome\ 5 Free;
+  font-weight: 900;
+  background: linear-gradient(45deg, #28A745, #28A745);
+  display: inline-block;
+  padding: 7px 24px 7px 24px;
+  color: #fff;
+  z-index: 2;
+  cursor: pointer;
+  text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  transition: all 300ms ease;
+}
+.pagination .nav-btn:hover {
+  background: linear-gradient(45deg, #28A745, #28A745);
+  text-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+}
+.pagination .nav-btn.next {
+  position: absolute;
+  right: 0;
+}
+.pagination .nav-btn.prev::before {
+  content: "\f053";
+}
+.pagination .nav-btn.next::before {
+  content: "\f054";
+}
+.pagination .nav-pages {
+  margin: 0;
+  padding: 0;
+  left: 0;
+  transition: left 300ms ease;
+  position: absolute;
+  width: max-content;
+}
+.pagination .nav-pages li {
+  list-style: none;
+  display: inline-block;
+  padding: 7px 10px;
+  border-right: 1px solid black;
+  color: rgba(255, 255, 255, 0.39);
+  text-align: center;
+  cursor: pointer;
+}
+.pagination .nav-pages li.active, .pagination .nav-pages li:hover {
+  color: white;
+}
+.pagination-content
+{ 
+  height: 30px;
+}

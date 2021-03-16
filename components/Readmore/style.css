@@ -1,0 +1,12 @@
+#more {display: none;}
+.readmore
+{
+  border: none;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
+  font-size: 14px;
+  padding-right: 12px;
+  padding-bottom: 4px;
+}
