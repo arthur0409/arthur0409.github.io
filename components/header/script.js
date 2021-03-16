@@ -53,7 +53,7 @@ $(".navigation .logo").click(function(){
 })
 
 $(".heading-right .fas.fa-shopping-cart.large-size").click(function(){
-    window.location.href='cart.html';
+    window.location.href='cartSEO.html';
 })
 
 $("#bottom-shopping-cart .fas.fa-shopping-cart").click(function(){
